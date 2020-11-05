@@ -1,0 +1,53 @@
+Problem 1
+Line Data
+FB|TB| R | X | B/2 | T |
+
+[1 2 0.15 0.4 0.04 1; 1 3 0.1 0.5 0.05 1; 1 4 0.15 0.6 0.04 1; 2 3 0.07 0.25 0.03 1; 3 4 0.09 0.3 0.04 1]
+
+Shunt Adm
+[0 0 0 0]
+
+Bus Data
+Bus| type| Vsp| theta|Pgi|Qgi| Pli| Qli| Qmin| Qmax|
+
+[1 1 1.06 0 0.0 0 2 0.6 0 0; 2 2 1.02 0 1.2 0 0 0 0.1 1.0; 3 3 1.0 0 0 0 0.7 0.5 0 0; 4 3 1.0 0 0 0 0.6 0.3 0 0]
+
+Problem 2
+Line Data
+start | end | R | X | Shunt Adm
+
+[1 2 0 0.4 0 ; 2 3 0 0.2 0 ; 1 3 0 0.3 0]
+
+Bus Data
+Type | PG | QG | PL | QL | vmag | del | Qmin | Qmax
+
+[1 0 0 0 0 1.05 0 0 0 ; 2 0.3 0 0 0 1.02 0 -0.1 1 ; 3 0 0 0.4 0.2 1 0 0 0]
+
+
+Modified Problem 2
+Line Data
+FB|TB| R | X | B/2 | T |
+
+[1 2 0 0.4 0 1; 2 3 0 0.2 0 1 ; 1 3 0 0.3 0 1]
+
+Shunt Adm
+[0 0 0]
+
+Bus Data
+Bus| type| Vsp| theta|Pgi|Qgi| Pli| Qli| Qmin| Qmax|
+
+[1 1 1.05 0 0 0 0 0 0 0 ; 2 2 1.02 0 0.3 0 0 0 -0.1 1 ; 3 3 1 0 0 0 0.4 0.2 0 0]
+
+
+Problem 3
+Line Data
+FB|TB| R | X | B/2 | T |
+[1 3 0.01 0.03 0 1; 1 2 0.02 0.04 0 1; 2 3 0.0125 0.025 0 1]
+
+Shunt Adm
+[0 0 0]
+
+Bus Data
+Bus| type| Vsp| theta|Pgi|Qgi| Pli| Qli| Qmin| Qmax|
+[1 1 1.05 0 0 0 0 0 0 0; 2 3 1 0 0 0 2.566 1.102 0 0; 3 3 1 0 0 0 1.386 0.452 0 0]
+
